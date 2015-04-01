@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sdm="http://rdf.cdisc.org/sdm#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://rdf.cdisc.org/sdm">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Protocol">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StudyDesignElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ExitCriteria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="EntryExitCriteria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PlannedActivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Activity"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="StudyEventReference">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Study">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SubsequentSchedulingBasis">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Schedule">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CriteriaList">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Activity">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Summary">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ParameterGroup">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TimingConstraint">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EntryCriteria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EntryExitCriteria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ExclusionCriteria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="InclusionExclusionCriteria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Segment">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Condition">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Arm">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ActivityDuration">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Parameter">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Epoch">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TransitionTimingConstraint">
+    <rdfs:subClassOf rdf:resource="#TimingConstraint"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ProtocolVersion">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="#InclusionExclusionCriteria">
+    <rdfs:subClassOf rdf:resource="#CriteriaList"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cell">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CellReference">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Trigger">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StudyEventType">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RelativeTimingConstraint">
+    <rdfs:subClassOf rdf:resource="#TimingConstraint"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TransitionDestination">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ParameterValue">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AbsoluteTimingConstraint">
+    <rdfs:subClassOf rdf:resource="#TimingConstraint"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DefinedActivity">
+    <rdfs:subClassOf rdf:resource="#Activity"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TimepointGranularity">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Transition">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TimingType">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StudyParameter">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StudyActivity">
+    <rdfs:subClassOf rdf:resource="#Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="#EntryExitCriteria">
+    <rdfs:subClassOf rdf:resource="#CriteriaList"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Criterion">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InclusionCriteria">
+    <rdfs:subClassOf rdf:resource="#InclusionExclusionCriteria"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StudyEvent">
+    <rdfs:subClassOf rdf:resource="#StudyDesignElement"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="summaryOf">
+    <rdfs:domain rdf:resource="#Summary"/>
+    <rdfs:range rdf:resource="#ProtocolVersion"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="instantiatesCell">
+    <rdfs:domain rdf:resource="#CellReference"/>
+    <rdfs:range rdf:resource="#Cell"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forParameter">
+    <rdfs:range rdf:resource="#Parameter"/>
+    <rdfs:domain rdf:resource="#ParameterValue"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="eventType">
+    <rdfs:domain rdf:resource="#StudyEvent"/>
+    <rdfs:range rdf:resource="#StudyEventType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forStudyActivity">
+    <rdfs:range rdf:resource="#StudyActivity"/>
+    <rdfs:domain rdf:resource="#PlannedActivity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forCell">
+    <rdfs:range rdf:resource="#Cell"/>
+    <rdfs:domain rdf:resource="#Segment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forEpoch">
+    <rdfs:domain rdf:resource="#Cell"/>
+    <rdfs:range rdf:resource="#Epoch"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="eventReference">
+    <rdfs:domain rdf:resource="#StudyEvent"/>
+    <rdfs:range rdf:resource="#StudyEventReference"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="parentEventType">
+    <rdfs:range rdf:resource="#StudyEventType"/>
+    <rdfs:domain rdf:resource="#StudyEventType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="subEventOf">
+    <rdfs:range rdf:resource="#StudyEvent"/>
+    <rdfs:domain rdf:resource="#StudyEvent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="parameterGroupOf">
+    <rdfs:domain rdf:resource="#ParameterGroup"/>
+    <rdfs:range rdf:resource="#ProtocolVersion"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="scheduleOf">
+    <rdfs:range rdf:resource="#ProtocolVersion"/>
+    <rdfs:domain rdf:resource="#Schedule"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="plannedPathFor">
+    <rdfs:range rdf:resource="#Schedule"/>
+    <rdfs:domain rdf:resource="#Arm"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forSegment">
+    <rdfs:domain rdf:resource="#PlannedActivity"/>
+    <rdfs:range rdf:resource="#Segment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="plannedPeriodFor">
+    <rdfs:range rdf:resource="#Schedule"/>
+    <rdfs:domain rdf:resource="#Epoch"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="versionOf">
+    <rdfs:domain rdf:resource="#ProtocolVersion"/>
+    <rdfs:range rdf:resource="#Protocol"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forArm">
+    <rdfs:domain rdf:resource="#CellReference"/>
+    <rdfs:range rdf:resource="#Arm"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="subActivityOf">
+    <rdfs:range rdf:resource="#StudyActivity"/>
+    <rdfs:domain rdf:resource="#StudyActivity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forParameterGroup">
+    <rdfs:domain rdf:resource="#ParameterValue"/>
+    <rdfs:range rdf:resource="#ParameterGroup"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="parameterOf">
+    <rdfs:range rdf:resource="#ParameterGroup"/>
+    <rdfs:domain rdf:resource="#Parameter"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="forStudyEvent">
+    <rdfs:domain rdf:resource="#PlannedActivity"/>
+    <rdfs:range rdf:resource="#StudyEvent"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="description">
+    <rdfs:domain rdf:resource="#StudyDesignElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="repeatingEvent">
+    <rdfs:domain rdf:resource="#StudyEvent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ParameterValue"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="oid">
+    <rdfs:domain rdf:resource="#StudyDesignElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="effectiveDate">
+    <rdfs:domain rdf:resource="#ProtocolVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ordinal">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:domain rdf:resource="#StudyDesignElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="label">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#StudyDesignElement"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="armAssociation">
+    <rdfs:domain rdf:resource="#Cell"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="name">
+    <rdfs:domain rdf:resource="#StudyDesignElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="scheduleLabel">
+    <rdfs:domain rdf:resource="#StudyDesignElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <sdm:SubsequentSchedulingBasis rdf:ID="SubsequentSchedulingBasis.Actual"/>
+  <sdm:SubsequentSchedulingBasis rdf:ID="SubsequentSchedulingBasis.Planned"/>
+  <sdm:TimingType rdf:ID="TimingType.StartToFinish"/>
+  <sdm:TimepointGranularity rdf:ID="TimepointGranularity.PM"/>
+  <sdm:TimepointGranularity rdf:ID="TimepointGranularity.PY"/>
+  <sdm:TimingType rdf:ID="TimingType.FinishToFinish"/>
+  <sdm:TimepointGranularity rdf:ID="TimepointGranularity.PTM"/>
+  <sdm:TimingType rdf:ID="TimingType.FinishToStart"/>
+  <sdm:TimepointGranularity rdf:ID="TimepointGranularity.PD"/>
+  <sdm:TimingType rdf:ID="TimingType.StartToStart"/>
+  <sdm:TimepointGranularity rdf:ID="TimepointGranularity.PTS"/>
+  <sdm:TimepointGranularity rdf:ID="TimepointGranularity.PTH"/>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
